@@ -4,61 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Groq AI Assistant by Junpblo343</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px;
-    }
-    .chatbox {
-      width: 400px;
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .user, .ai {
-      padding: 10px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-    .user {
-      background-color: #d1e7ff;
-      text-align: right;
-    }
-    .ai {
-      background-color: #e2e2e2;
-    }
-    input[type="text"] {
-      width: 80%;
-      padding: 8px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    button {
-      padding: 8px 12px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-  </style>
-</head>
-<body>
- <body class="bg-gray-100 text-gray-900">
-  <header style="text-align: center; background-color: #1E3A8A; color: white; padding: 1.2rem;">
-    <img src="https://i.imgur.com/xkF3W1X.png" alt="Junpblo343 Logo" width="60" style="border-radius: 50%;">
-    <h1 style="margin-top: 0.5rem;">Groq AI Assistant by Junpblo343</h1>
-  </header>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Groq AI Assistant by Junpblo343</title>
 </head>
 <body style="text-align: center; font-family: Arial, sans-serif;">
 
@@ -76,28 +21,6 @@
       <strong>AI:</strong> {{ ai_response }}
     </div>
   {% endif %}
-
-</body>
-</html>
-
-  <div style="max-width: 600px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <!-- Keep your form and responses here -->
-
-  <h2>🤖 My AI Assistant</h2>
-
-  <div class="chatbox">
-    {% if user_message %}
-      <div class="user">{{ user_message }}</div>
-    {% endif %}
-    {% if ai_response %}
-      <div class="ai">{{ ai_response }}</div>
-    {% endif %}
-  </div>
-
-  <form method="POST">
-    <input type="text" name="message" placeholder="Type your message..." required>
-    <button type="submit">Send</button>
-  </form>
 
 </body>
 </html>
