@@ -11,10 +11,23 @@
   <img src="{{ url_for('static', filename='logo.png') }}" alt="Groq AI Assistant Logo" width="120" style="margin-top: 20px;">
 
   <h1>Welcome to Groq AI Assistant by Junpblo343</h1>
-  <form method="POST">
-    <input type="text" name="message" placeholder="Type your message..." required>
-    <button type="submit">Ask</button>
-  </form>
+ 
+<form method="POST">
+    <input type="text" name="message" placeholder="Ask me anything..." />
+    <button type="submit">Ask AI</button>
+</form>
+
+<hr>
+
+<form method="POST">
+    <button type="submit" name="check_prices">Check Crypto Prices</button>
+</form>
+
+{% if ai_response %}
+<div class="response-box">
+    <pre>{{ ai_response }}</pre>
+</div>
+{% endif %}
 
   {% if ai_response %}
     <div style="margin-top:20px;">
