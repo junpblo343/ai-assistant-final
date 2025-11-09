@@ -22,7 +22,7 @@ def scheduled_price_check():
     result = check_prices()
     print(result)
 
-scheduler.add_job(scheduled_price_check, "interval", minutes=10)  # Run every hour
+scheduler.add_job(scheduled_price_check, "interval", hours=1)  # Run every hour
 scheduler.start()
 
 @app.route("/", methods=["GET", "POST"])
