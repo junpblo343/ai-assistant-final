@@ -52,7 +52,7 @@ def chat():
 
         elif "check_prices" in request.form:
             ai_response = check_prices()
-            user_message = "Checked crypto prices and alerts."
+            user_message =ai_response #"Checked crypto prices and alerts."
 
     return render_template("index.html", user_message=user_message, ai_response=ai_response)
 

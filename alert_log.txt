@@ -1,0 +1,207 @@
+2025-11-13 16:29:30,062 - INFO - \U0001f50d Testing Gmail login and email sending...
+2025-11-13 16:29:33,827 - INFO - \u2705 Test email sent successfully! Check your Gmail inbox.
+2025-11-13 16:30:30,069 - INFO - \U0001f4ec Crypto price monitor running... (Press Ctrl+C to stop)
+2025-11-13 16:30:30,070 - INFO - Checking crypto prices...
+2025-11-13 16:30:31,035 - INFO - Bitcoin: $103,661
+2025-11-13 16:30:33,503 - INFO - \u2705 Email sent successfully! Subject: \U0001f680 Bitcoin Alert!
+2025-11-13 16:30:34,571 - INFO - Solana: $156.02
+2025-11-13 16:30:36,990 - INFO - \u2705 Email sent successfully! Subject: \U0001f4c9 Solana Dropped!
+2025-11-13 16:30:38,082 - INFO - Algorand: $0.177822
+2025-11-13 16:30:40,914 - INFO - \u2705 Email sent successfully! Subject: \U0001f4c9 Algorand Dropped!
+2025-11-13 16:51:11,640 - INFO - 📬 Crypto price monitor running... (Press Ctrl+C to stop)
+2025-11-13 16:51:11,641 - INFO - 🔍 Checking crypto prices...
+2025-11-13 16:51:13,655 - INFO - Bitcoin: $103,667
+2025-11-13 16:51:16,833 - INFO - ✅ Email sent successfully! Subject: 🚀 Bitcoin Alert!
+2025-11-13 16:51:16,834 - INFO - 📈 Bitcoin is above target! Email sent.
+2025-11-13 16:51:17,822 - INFO - Solana: $156.11
+2025-11-13 16:51:20,605 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-13 16:51:20,607 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-13 16:51:21,683 - INFO - Algorand: $0.178328
+2025-11-13 16:51:24,789 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-13 16:51:24,790 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-13 17:51:25,373 - INFO - 🔍 Checking crypto prices...
+2025-11-13 17:51:26,410 - INFO - Bitcoin: $102,898
+2025-11-13 17:51:29,330 - INFO - ✅ Email sent successfully! Subject: 🚀 Bitcoin Alert!
+2025-11-13 17:51:29,331 - INFO - 📈 Bitcoin is above target! Email sent.
+2025-11-13 17:51:30,445 - INFO - Solana: $155.15
+2025-11-13 17:51:33,456 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-13 17:51:33,462 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-13 17:51:34,607 - INFO - Algorand: $0.177073
+2025-11-13 17:51:37,040 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-13 17:51:37,045 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-13 18:43:15,693 - INFO - 📬 Crypto price monitor running... (Press Ctrl+C to stop)
+2025-11-13 18:43:15,693 - INFO - 🔍 Checking crypto prices...
+2025-11-13 18:43:16,740 - INFO - Bitcoin: $102,918
+2025-11-13 18:43:20,027 - INFO - ✅ Email sent successfully! Subject: 🚀 Bitcoin Alert!
+2025-11-13 18:43:20,029 - INFO - 📈 Bitcoin is above target! Email sent.
+2025-11-13 18:43:21,162 - INFO - Solana: $155.23
+2025-11-13 18:43:23,934 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-13 18:43:23,935 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-13 18:43:25,074 - INFO - Algorand: $0.177912
+2025-11-13 18:43:27,908 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-13 18:43:27,910 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-13 18:51:38,298 - INFO - 🔍 Checking crypto prices...
+2025-11-13 18:51:39,360 - INFO - Bitcoin: $102,916
+2025-11-13 18:51:42,282 - INFO - ✅ Email sent successfully! Subject: 🚀 Bitcoin Alert!
+2025-11-13 18:51:42,288 - INFO - 📈 Bitcoin is above target! Email sent.
+2025-11-13 18:51:43,805 - INFO - Solana: $155.26
+2025-11-13 18:51:47,098 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-13 18:51:47,103 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-13 18:51:48,884 - INFO - Algorand: $0.177444
+2025-11-13 18:51:52,477 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-13 18:51:52,479 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-13 19:51:53,076 - INFO - 🔍 Checking crypto prices...
+2025-11-13 19:52:15,589 - ERROR - ⚠️ Error checking bitcoin: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-11-13 19:52:17,116 - INFO - Solana: $156.26
+2025-11-13 19:52:20,496 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-13 19:52:20,504 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-13 19:52:21,666 - INFO - Algorand: $0.177605
+2025-11-13 19:52:24,782 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-13 19:52:24,782 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-13 20:52:25,218 - INFO - 🔍 Checking crypto prices...
+2025-11-13 20:52:26,773 - INFO - Bitcoin: $103,163
+2025-11-13 20:52:30,209 - INFO - ✅ Email sent successfully! Subject: 🚀 Bitcoin Alert!
+2025-11-13 20:52:30,211 - INFO - 📈 Bitcoin is above target! Email sent.
+2025-11-13 20:52:32,236 - INFO - Solana: $156.48
+2025-11-13 20:52:34,958 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-13 20:52:34,960 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-13 20:52:37,092 - INFO - Algorand: $0.177139
+2025-11-13 20:52:40,348 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-13 20:52:40,353 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-13 21:35:12,255 - INFO - 📬 Crypto price monitor running... (Press Ctrl+C to stop)
+2025-11-13 21:35:12,256 - INFO - 🔍 Checking crypto prices...
+2025-11-13 21:35:14,276 - INFO - Bitcoin: $102,487
+2025-11-13 21:35:17,782 - INFO - ✅ Email sent successfully! Subject: 🚀 Bitcoin Alert!
+2025-11-13 21:35:17,784 - INFO - 📈 Bitcoin is above target! Email sent.
+2025-11-13 21:35:18,686 - INFO - Solana: $155.02
+2025-11-13 21:35:21,791 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-13 21:35:21,793 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-13 21:35:24,955 - INFO - Algorand: $0.177295
+2025-11-13 21:35:28,060 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-13 21:35:28,064 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 10:22:54,984 - INFO - 📬 Crypto price monitor running... (Press Ctrl+C to stop)
+2025-11-14 10:22:54,984 - INFO - 🔍 Checking crypto prices...
+2025-11-14 10:22:55,954 - INFO - Bitcoin: $99,592
+2025-11-14 10:22:57,008 - INFO - Solana: $145.07
+2025-11-14 10:22:59,652 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 10:22:59,655 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 10:23:00,722 - INFO - Algorand: $0.166997
+2025-11-14 10:23:03,680 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 10:23:03,683 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 10:28:22,519 - INFO - 📬 Crypto price monitor running... (Press Ctrl+C to stop)
+2025-11-14 10:28:22,519 - INFO - 🔍 Checking crypto prices...
+2025-11-14 10:28:23,455 - INFO - Bitcoin: $99,576
+2025-11-14 10:28:24,523 - INFO - Solana: $145.19
+2025-11-14 10:28:27,598 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 10:28:27,600 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 10:28:28,667 - INFO - Algorand: $0.166705
+2025-11-14 10:28:31,730 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 10:28:31,733 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 10:50:13,244 - INFO - 📬 Crypto price monitor running... (Press Ctrl+C to stop)
+2025-11-14 10:50:13,245 - INFO - 🔍 Checking crypto prices...
+2025-11-14 10:50:14,409 - INFO - Bitcoin: $99,578
+2025-11-14 10:50:15,625 - INFO - Solana: $145.1
+2025-11-14 10:50:18,703 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 10:50:18,706 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 10:50:19,770 - INFO - Algorand: $0.166385
+2025-11-14 10:50:22,929 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 10:50:22,931 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 12:13:01,481 - INFO - 🔍 Checking crypto prices...
+2025-11-14 12:13:04,218 - INFO - Bitcoin: $98,808
+2025-11-14 12:13:05,407 - INFO - Solana: $143.45
+2025-11-14 12:13:09,951 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 12:13:09,953 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 12:13:10,975 - INFO - Algorand: $0.162709
+2025-11-14 12:13:14,005 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 12:13:14,006 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 13:13:14,649 - INFO - 🔍 Checking crypto prices...
+2025-11-14 13:13:15,593 - INFO - Bitcoin: $97,530
+2025-11-14 13:13:16,655 - INFO - Solana: $142.05
+2025-11-14 13:13:19,568 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 13:13:19,570 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 13:13:20,765 - INFO - Algorand: $0.161744
+2025-11-14 13:13:23,579 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 13:13:23,581 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 14:13:23,874 - INFO - 🔍 Checking crypto prices...
+2025-11-14 14:13:25,843 - INFO - Bitcoin: $97,155
+2025-11-14 14:13:26,927 - INFO - Solana: $142.55
+2025-11-14 14:13:30,215 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 14:13:30,219 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 14:13:31,355 - INFO - Algorand: $0.163239
+2025-11-14 14:13:34,310 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 14:13:34,316 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 16:42:27,825 - INFO - 🔍 Checking crypto prices...
+2025-11-14 16:42:29,956 - INFO - Bitcoin: $97,108
+2025-11-14 16:42:31,972 - INFO - Solana: $142.2
+2025-11-14 16:42:35,958 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 16:42:35,960 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 16:42:37,045 - INFO - Algorand: $0.163941
+2025-11-14 16:42:39,497 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 16:42:39,498 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 17:42:39,791 - INFO - 🔍 Checking crypto prices...
+2025-11-14 17:43:22,692 - INFO - Bitcoin: $96,961
+2025-11-14 17:44:05,639 - INFO - Solana: $141.32
+2025-11-14 17:44:30,388 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 17:44:30,394 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 17:45:13,460 - INFO - Algorand: $0.162061
+2025-11-14 17:45:37,798 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 17:45:37,802 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 18:00:32,511 - INFO - ✅ Email sent successfully! Subject: 📊 Daily Crypto Alert Summary — November 14, 2025
+2025-11-14 18:00:32,512 - INFO - ✅ Daily summary email sent!
+2025-11-14 18:23:41,399 - INFO - 📬 Crypto price monitor running... (Press Ctrl+C to stop)
+2025-11-14 18:23:41,400 - INFO - 🔍 Checking crypto prices...
+2025-11-14 18:24:24,269 - INFO - Bitcoin: $96,985
+2025-11-14 18:25:07,179 - INFO - Solana: $141.56
+2025-11-14 18:25:32,157 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 18:25:32,160 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 18:26:15,328 - INFO - Algorand: $0.161558
+2025-11-14 18:26:40,251 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 18:26:40,253 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 18:45:42,761 - INFO - 🔍 Checking crypto prices...
+2025-11-14 18:46:26,773 - INFO - Bitcoin: $97,156
+2025-11-14 18:47:09,650 - INFO - Solana: $142.34
+2025-11-14 18:47:34,851 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 18:47:34,854 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 18:48:17,947 - INFO - Algorand: $0.162279
+2025-11-14 18:48:42,453 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 18:48:42,455 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 19:48:42,767 - INFO - 🔍 Checking crypto prices...
+2025-11-14 19:49:25,747 - INFO - Bitcoin: $96,017
+2025-11-14 19:50:08,635 - INFO - Solana: $140.35
+2025-11-14 19:50:34,873 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 19:50:34,876 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 19:51:40,608 - ERROR - ⚠️ Error checking algorand: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-11-14 20:51:40,886 - INFO - 🔍 Checking crypto prices...
+2025-11-14 20:52:23,962 - INFO - Bitcoin: $95,254
+2025-11-14 20:53:07,513 - INFO - Solana: $137.28
+2025-11-14 20:53:33,020 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 20:53:33,023 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 20:54:16,199 - INFO - Algorand: $0.159966
+2025-11-14 20:54:41,925 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 20:54:41,928 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-14 21:54:42,227 - INFO - 🔍 Checking crypto prices...
+2025-11-14 21:55:25,485 - INFO - Bitcoin: $95,197
+2025-11-14 21:56:08,370 - INFO - Solana: $137.71
+2025-11-14 21:56:33,605 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-14 21:56:33,611 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-14 21:57:16,748 - INFO - Algorand: $0.160773
+2025-11-14 21:57:41,487 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-14 21:57:41,489 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-15 20:00:16,417 - INFO - ✅ Email sent successfully! Subject: 📊 Daily Crypto Alert Summary — November 15, 2025
+2025-11-15 20:00:16,434 - INFO - ✅ Daily summary email sent!
+2025-11-16 21:38:18,919 - INFO - 🔍 Checking crypto prices...
+2025-11-16 21:39:02,063 - INFO - Bitcoin: $95,335
+2025-11-16 21:39:44,995 - INFO - Solana: $139.77
+2025-11-16 21:40:09,760 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-16 21:40:09,774 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-16 21:40:52,844 - INFO - Algorand: $0.16102
+2025-11-16 21:41:16,989 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-16 21:41:17,004 - WARNING - 📉 Algorand dropped significantly! Email sent.
+2025-11-18 08:39:30,333 - INFO - 🔍 Checking crypto prices...
+2025-11-18 08:39:31,383 - INFO - Bitcoin: $91,769
+2025-11-18 08:39:32,468 - INFO - Solana: $129.93
+2025-11-18 08:39:35,590 - INFO - ✅ Email sent successfully! Subject: 📉 Solana Dropped!
+2025-11-18 08:39:35,606 - WARNING - 📉 Solana dropped significantly! Email sent.
+2025-11-18 08:39:36,737 - INFO - Algorand: $0.151334
+2025-11-18 08:39:39,272 - INFO - ✅ Email sent successfully! Subject: 📉 Algorand Dropped!
+2025-11-18 08:39:39,288 - WARNING - 📉 Algorand dropped significantly! Email sent.
