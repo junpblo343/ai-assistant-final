@@ -1,5 +1,3 @@
-# Detect Render environment
-RUNNING_ON_RENDER = os.environ.get("RENDER") == "true"
 from flask import Flask, render_template, request
 import requests
 import os
@@ -7,6 +5,7 @@ from dotenv import load_dotenv
 from groq import Groq
 from crypto_monitor import check_prices
 from apscheduler.schedulers.background import BackgroundScheduler  # ✅ NEW
+# Detect Render environment
 RUNNING_ON_RENDER = os.environ.get("RENDER") == "true"
 
 app = Flask(__name__)
