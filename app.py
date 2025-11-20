@@ -8,6 +8,7 @@ from apscheduler.schedulers.background import BackgroundScheduler  # ✅ NEW
 # Detect Render environment
 RUNNING_ON_RENDER = os.environ.get("RENDER") == "true"
 
+
 app = Flask(__name__)
 
 load_dotenv()
@@ -15,7 +16,7 @@ load_dotenv()
 # ✅ Groq API setup
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
-
+print("Loaded GROQ_API_KEY:", GROQ_API_KEY)
 # ✅ Scheduler setup
 scheduler = BackgroundScheduler()
 
@@ -24,8 +25,8 @@ def scheduled_price_check():
     result = check_prices()
     print(result)
 if not RUNNING_ON_RENDER:
-    scheduler.add_job(scheduled_price_check, "interval", hours=1) # Run every hour 
-    scheduler.start()
+    #scheduler.add_job(scheduled_price_check, "interval", hours=1) # Run every hour 
+    #scheduler.start()
  
 @app.route("/", methods=["GET", "POST"])
 def chat():
