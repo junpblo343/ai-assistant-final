@@ -1,3 +1,5 @@
+# Detect Render environment
+RUNNING_ON_RENDER = os.environ.get("RENDER") == "true"
 from flask import Flask, render_template, request
 import requests
 import os
@@ -5,6 +7,7 @@ from dotenv import load_dotenv
 from groq import Groq
 from crypto_monitor import check_prices
 from apscheduler.schedulers.background import BackgroundScheduler  # ✅ NEW
+RUNNING_ON_RENDER = os.environ.get("RENDER") == "true"
 
 app = Flask(__name__)
 
@@ -21,10 +24,10 @@ def scheduled_price_check():
     print("🕐 Scheduled crypto price check running...")
     result = check_prices()
     print(result)
-
-scheduler.add_job(scheduled_price_check, "interval", hours=1)  # Run every hour
-scheduler.start()
-
+if not RUNNING_ON_RENDER:
+    scheduler.add_job(scheduled_price_check, "interval", hours=1) # Run every hour 
+    scheduler.start()
+ 
 @app.route("/", methods=["GET", "POST"])
 def chat():
     user_message = ""
@@ -56,6 +59,7 @@ def chat():
 
     return render_template("index.html", user_message=user_message, ai_response=ai_response)
 
-if __name__ == "__main__":
-    print("🚀 Flask AI assistant running on http://127.0.0.1:8080")
+# Local-only Flask run (Render will ignore this)
+if __name__ == "__main__" and not RUNNING_ON_RENDER:
+    print("🚀 Flask AI assistant running locally at http://127.0.0.1:8080")
     app.run(debug=True, port=8080)
