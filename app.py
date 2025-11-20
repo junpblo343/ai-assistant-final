@@ -24,7 +24,7 @@ def scheduled_price_check():
     print("🕐 Scheduled crypto price check running...")
     result = check_prices()
     print(result)
-if not RUNNING_ON_RENDER:
+#if not RUNNING_ON_RENDER:
     #scheduler.add_job(scheduled_price_check, "interval", hours=1) # Run every hour 
     #scheduler.start()
  
