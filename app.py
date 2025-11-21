@@ -73,7 +73,7 @@ def chat():
 
             # Skip emails on Render
             if RUNNING_ON_RENDER:
-                ai_response = check_prices(skip_email=True)
+                user_message = check_prices(skip_email=True)
             else:
                 user_message = check_prices()
 
