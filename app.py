@@ -14,7 +14,7 @@ app = Flask(__name__)
 load_dotenv()
 
 # Load Groq API Key
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
 
 if not GROQ_API_KEY:
     print("❌ ERROR: GROQ_API_KEY is missing!")
