@@ -7,7 +7,7 @@ from crypto_monitor import check_prices
 from apscheduler.schedulers.background import BackgroundScheduler
 
 # Detect Render environment
-RUNNING_ON_RENDER = os.environ.get("RENDER") == "true"
+RUNNING_ON_RENDER = os.getenv("RENDER", None) is not None
 
 app = Flask(__name__)
 
@@ -85,5 +85,4 @@ def chat():
 
 # Local-run only
 if __name__ == "__main__" and not RUNNING_ON_RENDER:
-    print("🚀 Running locally at http://127.0.0.1:8080")
-    app.run(debug=True, port=8080)
+    app.run(debug=True)
