@@ -75,9 +75,9 @@ def chat():
             if RUNNING_ON_RENDER:
                 ai_response = check_prices(skip_email=True)
             else:
-                ai_response = check_prices()
+                user_message = check_prices()
 
-            user_message = ai_response
+            #user_message = ai_response
 
     return render_template("index.html",
                            user_message=user_message,

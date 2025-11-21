@@ -4,5 +4,7 @@ print(x)
 #import crypto_monitor
 #X=crypto_monitor.CRYPTO_TARGETS
 #print(X)
-
-#crypto_monitor.check_prices()
+from crypto_monitor import check_prices
+check_prices()
+#x=crypto_monitor.get_price("bitcoin")
+#print(x)
