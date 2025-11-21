@@ -31,7 +31,14 @@ CRYPTO_TARGETS = {
 def get_price(coin):
     url = f"https://api.coingecko.com/api/v3/simple/price?ids={coin}&vs_currencies=usd"
     response = requests.get(url)
-    return response.json()[coin]["usd"]
+    data = response.json()
+    print("API RESPONSE:", data)
+
+    if coin not in data:
+        return f"Error: '{coin}' not found in API response"
+
+    return data[coin]["usd"]
+
 
 def send_email(subject, message):
     if RUNNING_ON_RENDER:
