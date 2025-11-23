@@ -64,6 +64,8 @@ def send_email(subject, message):
         print(f"❌ Email error: {e}")
 
 def check_prices(skip_email=False):
+    if RUNNING_ON_RENDER:
+        skip_email=True
     summary = ""
     for coin, targets in CRYPTO_TARGETS.items():
         price = get_price(coin)
