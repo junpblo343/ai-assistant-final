@@ -72,12 +72,10 @@ def chat():
         elif "check_prices" in request.form:
 
             # Skip emails on Render
-           ## if RUNNING_ON_RENDER:
-            ##    user_message = check_prices(skip_email=True)
-           ## else:
-                user_message = check_prices()
-
-            #user_message = ai_response
+           if RUNNING_ON_RENDER:
+               user_message = check_prices(skip_email=True)
+           else:
+               user_message = check_prices()
 
     return render_template("index.html",
                            user_message=user_message,
