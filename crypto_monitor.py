@@ -10,9 +10,10 @@ load_dotenv()
 EMAIL_USER = os.getenv("EMAIL_USER")
 EMAIL_PASS = os.getenv("EMAIL_PASS")
 
-# Detect Render
+# Detect Render environment
 RUNNING_ON_RENDER = os.environ.get("RENDER") == "true"
 
+# Crypto alert targets — ensure float conversion ALWAYS happens
 CRYPTO_TARGETS = {
     "bitcoin": {
         "up": float(os.getenv("BITCOIN_TARGET_UP", 100000)),
@@ -28,19 +29,32 @@ CRYPTO_TARGETS = {
     }
 }
 
+
 def get_price(coin):
+    """Returns float price or None if API fails"""
     url = f"https://api.coingecko.com/api/v3/simple/price?ids={coin}&vs_currencies=usd"
-    response = requests.get(url)
-    data = response.json()
-    print("API RESPONSE:", data)
 
-    if coin not in data:
-        return f"Error: '{coin}' not found in API response"
+    try:
+        response = requests.get(url, timeout=10)
+        data = response.json()
+        print("API RESPONSE:", data)
 
-    return data[coin]["usd"]
+        # Handle API errors (like rate limits)
+        if "status" in data and "error_code" in data["status"]:
+            return None  # force skip
+
+        if coin not in data:
+            return None
+
+        return float(data[coin]["usd"])
+
+    except Exception as e:
+        print(f"❌ API ERROR for {coin}: {e}")
+        return None
 
 
 def send_email(subject, message):
+    """Skip email alerts on Render"""
     if RUNNING_ON_RENDER:
         print("📭 Email sending skipped on Render.")
         return
@@ -63,29 +77,43 @@ def send_email(subject, message):
     except Exception as e:
         print(f"❌ Email error: {e}")
 
+
 def check_prices(skip_email=False):
     summary = ""
+
     for coin, targets in CRYPTO_TARGETS.items():
+
         price = get_price(coin)
+
+        # If API failed (rate limit or connection problem)
+        if price is None:
+            summary += f"⚠️ Unable to fetch {coin} price (API limit or connection error).\n"
+            continue
+
         summary += f"💰 {coin.capitalize()} price: ${price}\n"
 
-        if price >= targets["up"]:
+        up_target = float(targets["up"])
+        down_target = float(targets["down"])
+
+        # Compare safely
+        if price >= up_target:
             if not skip_email:
                 send_email(
                     f"🚀 {coin.capitalize()} Price Alert!",
-                    f"{coin.capitalize()} is now ${price} (above ${targets['up']})!"
+                    f"{coin.capitalize()} is now ${price} (above ${up_target})!"
                 )
             summary += "🚀 Above target!\n"
 
-        elif price <= targets["down"]:
+        elif price <= down_target:
             if not skip_email:
                 send_email(
                     f"📉 {coin.capitalize()} Price Alert!",
-                    f"{coin.capitalize()} dropped to ${price} (below ${targets['down']})!"
+                    f"{coin.capitalize()} dropped to ${price} (below ${down_target})!"
                 )
             summary += "📉 Below target!\n"
 
     return summary
+
 
 if __name__ == "__main__":
     print(check_prices())
